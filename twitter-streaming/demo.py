@@ -9,6 +9,8 @@ from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
 
+import requests
+import json
 
 # Load environment variables
 dotenv_path = join(dirname(__file__), '.env')
@@ -25,6 +27,13 @@ class StdOutListener(StreamListener):
 
     def on_data(self, data):
         print(data)
+        payload = {
+            "text": json.loads(data)["text"],
+            "unfurl_links": True,
+            "unfurl_media": True
+        }
+        req = requests.post(os.environ.get("SLACK_HOOK_URL"), json=payload)
+        print(req.text)
         return True
 
     def on_error(self, status):
@@ -40,4 +49,4 @@ if __name__ == '__main__':
     stream = Stream(auth, l)
 
     # Filter for mentions of copenhacks
-    stream.filter(track=['copenhack'])
+    stream.filter(track=['copenhacks'])

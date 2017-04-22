@@ -7,7 +7,7 @@ Introduction to APIs Workshop at CopenHacks 2017
 - Download and install Postman. It's a really cool tool for playing around with APIs. Get it [here](https://www.getpostman.com/)
 
 ## Setup Instructions for the demo code
-- clone this directory by running `https://github.com/wilhelmklopp/introduction-to-apis.git`
+- clone this directory by running `git clone https://github.com/wilhelmklopp/introduction-to-apis.git`
 - Run `cd introduction-to-apis`
 - Run `cd twitter-streaming`  
 

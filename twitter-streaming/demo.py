@@ -40,4 +40,4 @@ if __name__ == '__main__':
     stream = Stream(auth, l)
 
     # Filter for mentions of copenhacks
-    stream.filter(track=['copenhack'])
+    stream.filter(track=['copenhacks', 'Copenhacks', 'CopenHacks'])

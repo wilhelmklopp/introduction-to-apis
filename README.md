@@ -1,5 +1,5 @@
 # introduction-to-apis
-Introduction to APIs workshop
+Introduction to APIs workshop at CopenHacks 2017
 
 ## Requirements for this workshop
 - You should have a Twitter account
@@ -12,6 +12,6 @@ Introduction to APIs workshop
 
 - Install the dependencies by running `pip install -r requirements.txt`
 - Run `cp .env.example .env`
-- Open the `.env.` file and input the relevant values, which you can obtain from https://apps.twitter.com
+- Open the `.env` file and input the relevant values, which you can obtain from https://apps.twitter.com
 
 - Run `demo.py`

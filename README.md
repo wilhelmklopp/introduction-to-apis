@@ -1,5 +1,5 @@
 # introduction-to-apis
-Introduction to APIs Workshop at CopenHacks 2017
+Introduction to APIs Workshop at CopenHacks 2017 :sailboat:
 
 ## Pre-workshop instructions
 - If you don't already have a twitter account, create one [here](https://twitter.com)
